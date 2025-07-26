@@ -1,0 +1,46 @@
+# Ignore system files and cache
+**/.DS_Store
+**/.git
+**/.gitignore
+**/.vscode
+**/.idea
+**/.history
+**/.project
+**/.settings
+
+# Ignore node_modules for frontend, build temporary modules
+node_modules/
+dist/
+build/
+# If you use yarn
+.yarn/cache/
+
+# Ignore log files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Ignore Python virtual environment files
+venv/
+.env
+.env.*
+
+# Ignore local build files
+/**/tests/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/*.sqlite
+**/*.db
+
+# Ignore temporary files or sensitive configuration files (not to be included in the image)
+*.pem
+*.key
+*.crt
+*.env
+*.secret
+
+# Avoid including the Docker folder if copying it into the build
+Dockerfile
+docker-compose.yml
