@@ -1,14 +1,11 @@
 {
   "name": "CentralArr Dev Container",
   "build": {
-    "dockerfile": "Dockerfile.dev",
-    "context": ".."
+    "dockerfile": "Dockerfile.dev"
   },
-  "workspaceFolder": "/work",
   "runArgs": [
     "--init",
     "-p", "5000:5000",
     "-p", "5173:5173"
-  ],
-  "postCreateCommand": "make dev-install"
+  ]
 }

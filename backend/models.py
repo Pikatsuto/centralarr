@@ -1,7 +1,6 @@
 from sqlalchemy import Table, Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship, declarative_base
-
-Base = declarative_base()
+from backend.database import Base
 
 # Association tables for many-to-many relationships
 user_groups = Table(

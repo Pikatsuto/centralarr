@@ -41,7 +41,7 @@ The project is built to be easy for developers and simple to deploy, either as a
      make dev
      ```
 
-     This starts both the Flask backend (with hot-reload) and the Vue.js frontend in development mode (hot-reload).
+     This starts both the FastAPI backend (with hot-reload) and the Vue.js frontend in development mode (hot-reload).
 
 ---
 
@@ -64,7 +64,7 @@ The project is built to be easy for developers and simple to deploy, either as a
    make dev
    ```
 
-   This will launch the Flask backend on `localhost:5000`
+   This will launch the FastAPI backend on `localhost:5000`
    and the Vue.js frontend in hot-reload mode (`localhost:5173`).
 4. **Clean your environment**
 
@@ -140,8 +140,7 @@ centralarr/
 ├── .devcontainer/           # VS Code dev container configuration
 │   └── Dockerfile.dev       # Dockerfile for development environment
 ├── backend/
-│   ├── __init__.py          # Flask app initialization
-│   ├── main.py              # Flask server entry point
+│   ├── main.py              # FastAPI server entry point
 │   ├── crud.py              # Global configuration
 │   ├── proxy.py             # Reverse proxy logic
 │   ├── models.py            # Database, ORM, data management
@@ -149,7 +148,7 @@ centralarr/
 ├── frontend/
 │   ├── package.json         # NPM / Vue.js configuration
 │   ├── src/                 # Vue.js source code
-│   └── build/ (or dist/)    # Final frontend build to be served by Flask static
+│   └── build/ (or dist/)    # Final frontend build to be served by FastAPI static
 ├── makedeb/                 # .deb package generation scripts
 ├── android/                 # Android app (WebView)
 ├── Dockerfile               # Production Dockerfile
